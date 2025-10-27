@@ -1,0 +1,20 @@
+// Control parameters for simulation
+
+// Time integration parameters
+endTime         1e-3;     // End time [s]
+dtInitial       1e-8;      // Initial time step [s]
+dtMax           1e-6;      // Maximum time step [s]
+outputInterval  1e-6;      // Output interval [s]
+
+// Integration parameters
+integrator       CVODE;      // Integrator type: CVODE, DLSODES, etc.
+maxStep         1e-6;      // Maximum step size [s]
+tolerance       1e-8;       // Integration tolerance
+
+// Output parameters
+outputFileName  output_H2O2HE.csv;  // Output file name
+plotFileName    plot.py;             // Plotting script name
+
+// Debug parameters
+debugLevel      INFO;        // Debug level: NONE, WARNING, INFO, DEBUG
+saveProfile     no;          // Save electron energy profile
